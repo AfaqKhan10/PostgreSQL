@@ -1,3 +1,6 @@
+-- SQL PRACTICE 
+
+
 CREATE TABLE students_raw (
     student_id INT,
     student_name VARCHAR(50),
@@ -13,8 +16,6 @@ INSERT INTO students_raw VALUES
 
 
 select * from students_raw;
-
-
 
 
 -- Student basic info
@@ -40,7 +41,6 @@ CREATE TABLE enrollment (
     FOREIGN KEY (student_id) REFERENCES students(student_id),
     FOREIGN KEY (course_id) REFERENCES courses(course_id)
 );
-
 
 
 INSERT INTO students VALUES
@@ -71,9 +71,6 @@ SELECT s.student_name, c.course_name, c.instructor_name
 FROM enrollment e
 JOIN students s ON e.student_id = s.student_id
 JOIN courses c ON e.course_id = c.course_id;
-
-
-
 
 
 
