@@ -1,6 +1,4 @@
 
-
-
 CREATE TABLE students_balance (
     student_id SERIAL PRIMARY KEY,
     name VARCHAR(50),
@@ -43,4 +41,5 @@ WHERE name = 'Ali';
 ROLLBACK;
 
 SELECT * FROM students_balance;
+
 
